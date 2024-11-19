@@ -6,7 +6,7 @@ from sklearn.preprocessing import LabelEncoder
 import pandas as pd
 import numpy as np
 
-data = pd.read_csv("test.csv")
+data = pd.read_csv("Prueba FastApi/test.csv")
 data = data.rename(columns={"Var_1": "Category"})
 
 data['Work_Experience'] = data['Work_Experience'].fillna(data['Work_Experience'].median())
